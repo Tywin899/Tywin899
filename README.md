@@ -99,38 +99,9 @@ An automated retrieval-augmented intelligence system built to ingest multi-page 
 
 ### `04` — EXPERIENCE & EDUCATION
 
-<table>
-  <tr>
-    <td width="55%" valign="top">
-      <h4>💼 Experience</h4>
-      <p><b>Risk Modeling Intern</b> — <i>Arsha Consultants</i><br/>
-      <small><code>Jan 2026 – Jun 2026</code> · Pune, India</small></p>
-      <ul>
-        <li>Architected adaptive spatiotemporal risk models using Bayesian inference &amp; Kalman filtering for dynamic anomaly localization.</li>
-        <li>Developed sensor optimization algorithms using Expected Improvement (EI) to maximize spatial coverage with minimal IoT nodes.</li>
-        <li>Evaluated model discrimination and cost-sensitive trade-offs via ROC/AUC curves.</li>
-      </ul>
-    </td>
-    <td width="45%" valign="top">
-      <h4>🎓 Education</h4>
-      <p><b>B.E. in Computer Engineering</b><br/>
-      <i>Marathwada Mitra Mandal's College of Engineering (MMCOE)</i><br/>
-      <small><code>2023 – 2027</code> · TY CGPA: <b>9.285 / 10.0</b></small></p>
-      
-      <h4>📜 Certifications</h4>
-      <ul>
-        <li><b>Intel Unnati Data-Centric Labs:</b> Emerging Tech / ML</li>
-        <li><b>Flutter &amp; Dart:</b> The Complete Guide</li>
-      </ul>
-
-      <h4>🤝 Leadership</h4>
-      <ul>
-        <li><b>Secretary:</b> IEEE Student Branch</li>
-        <li><b>Marketing Member:</b> Google Developer Student Club</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+| 💼 Experience | 🎓 Education & Credentials |
+| :--- | :--- |
+| **Risk Modeling Intern** — *Arsha Consultants*<br/>`Jan 2026 – Jun 2026` · Pune, India<br/><br/>• Architected adaptive spatiotemporal risk models using Bayesian inference &amp; Kalman filtering for dynamic anomaly localization.<br/>• Developed sensor optimization algorithms using Expected Improvement (EI) to maximize spatial coverage with minimal IoT nodes.<br/>• Evaluated model discrimination and cost-sensitive trade-offs via ROC/AUC curves. | **B.E. in Computer Engineering**<br/>*Marathwada Mitra Mandal's College of Engineering (MMCOE)*<br/>`2023 – 2027` · TY CGPA: **9.285 / 10.0**<br/><br/>**📜 Certifications**<br/>• **Intel Unnati Data-Centric Labs:** Emerging Tech / ML<br/>• **Flutter &amp; Dart:** The Complete Guide<br/><br/>**🤝 Leadership**<br/>• **Secretary:** IEEE Student Branch<br/>• **Marketing Member:** Google Developer Student Club |
 
 ---
 
@@ -157,23 +128,20 @@ An automated retrieval-augmented intelligence system built to ingest multi-page 
 
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  Available for backend engineering, search systems, and applied ML roles.  │
-│  Let's build reliable, high-throughput architectures together.              │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+<img src="assets/connect.svg" width="100%" alt="Connect with Soham Hadap" />
+
+<br/><br/>
 
 <a href="https://portfolio-nu-eight-j0t7f3qv3f.vercel.app/">
-  <img src="https://img.shields.io/badge/Live_Portfolio-Website-0284C7?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
-</a>
-&nbsp;&nbsp;
-<a href="mailto:hadapsoham@gmail.com">
-  <img src="https://img.shields.io/badge/Email-hadapsoham%40gmail.com-38BDF8?style=for-the-badge&logo=mail.ru&logoColor=0B1020" alt="Email Direct" />
+  <img src="https://img.shields.io/badge/🚀_VIEW_PORTFOLIO-0284C7?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
 </a>
 &nbsp;&nbsp;
 <a href="https://linkedin.com/in/soham-hadap-3848b532a">
   <img src="https://img.shields.io/badge/LinkedIn-Soham_Hadap-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile" />
+</a>
+&nbsp;&nbsp;
+<a href="mailto:hadapsoham@gmail.com">
+  <img src="https://img.shields.io/badge/Email-hadapsoham%40gmail.com-38BDF8?style=for-the-badge&logo=mail.ru&logoColor=0B1020" alt="Email Direct" />
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/Tywin899">
