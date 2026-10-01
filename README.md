@@ -5,8 +5,10 @@
 
 <br/><br/>
 
-<!-- REFINED DIRECT CTA LINKS -->
+<!-- REFINED DIRECT CTA LINKS WITH PROMINENT LIVE PORTFOLIO -->
 <p align="center">
+  <a href="https://portfolio-nu-eight-j0t7f3qv3f.vercel.app/"><img src="https://img.shields.io/badge/🚀_VIEW_PORTFOLIO-0284C7?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" /></a>
+  &nbsp;
   <a href="https://linkedin.com/in/soham-hadap-3848b532a"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   &nbsp;
   <a href="mailto:hadapsoham@gmail.com"><img src="https://img.shields.io/badge/Direct_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
@@ -162,6 +164,10 @@ An automated retrieval-augmented intelligence system built to ingest multi-page 
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
+<a href="https://portfolio-nu-eight-j0t7f3qv3f.vercel.app/">
+  <img src="https://img.shields.io/badge/Live_Portfolio-Website-0284C7?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
+</a>
+&nbsp;&nbsp;
 <a href="mailto:hadapsoham@gmail.com">
   <img src="https://img.shields.io/badge/Email-hadapsoham%40gmail.com-38BDF8?style=for-the-badge&logo=mail.ru&logoColor=0B1020" alt="Email Direct" />
 </a>
