@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgRag" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C17" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="ragLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <filter id="glowRag" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="gridRag" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1E293B" stroke-width="0.5" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .stage-title { font-weight: 700; font-size: 13px; fill: #F8FAFC; }
+    .stage-sub { font-size: 10px; fill: #94A3B8; }
+    .tag { font-size: 9px; font-weight: 600; fill: #38BDF8; letter-spacing: 0.05em; }
+    .subhead { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; fill: #64748B; }
+  </style>
+
+  <rect width="1100" height="280" rx="14" fill="url(#bgRag)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="1100" height="280" rx="14" fill="url(#gridRag)" />
+
+  <!-- Title inside SVG -->
+  <g transform="translate(35, 28)">
+    <text x="0" y="0" class="mono subhead">RAG ARCHITECTURE · CONTEXT-GROUNDED INFERENCE</text>
+    <text x="0" y="24" class="sans" font-size="20" font-weight="700" fill="#F8FAFC">Financial Report Analyser Pipeline</text>
+    <text x="640" y="24" class="mono" font-size="11" fill="#34D399">FASTAPI · FAISS · HUGGINGFACE · GROQ LLAMA 3.1</text>
+  </g>
+
+  <!-- 5 Horizontal Pipeline Stages -->
+  
+  <!-- Stage 1: Document & Chunking -->
+  <g transform="translate(35, 80)">
+    <rect width="180" height="165" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+    <text x="14" y="24" class="mono tag">01 · INGESTION</text>
+    <text x="14" y="44" class="sans stage-title">PDF Financial 10-Ks</text>
+    
+    <g transform="translate(14, 58)">
+      <rect width="152" height="42" rx="4" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="8" y="18" class="sans" font-size="10" font-weight="600" fill="#E2E8F0">Semantic Chunking</text>
+      <text x="8" y="32" class="sans stage-sub">Table &amp; footnote preservation</text>
+
+      <rect y="48" width="152" height="36" rx="4" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="8" y="16" class="mono" font-size="10" fill="#38BDF8">LangChain Splitter</text>
+      <text x="8" y="28" class="sans stage-sub">Overlap window = 128 tok</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 223 162 L 252 162" stroke="#38BDF8" stroke-width="2" />
+
+  <!-- Stage 2: Embeddings & Vector Index -->
+  <g transform="translate(255, 80)">
+    <rect width="185" height="165" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+    <text x="14" y="24" class="mono tag">02 · VECTOR STORE</text>
+    <text x="14" y="44" class="sans stage-title">Dense FAISS Index</text>
+
+    <g transform="translate(14, 58)">
+      <rect width="157" height="42" rx="4" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="8" y="18" class="sans" font-size="10" font-weight="600" fill="#E2E8F0">HuggingFace Embeddings</text>
+      <text x="8" y="32" class="mono" font-size="9" fill="#818CF8">Dense vector representation</text>
+
+      <rect y="48" width="157" height="36" rx="4" fill="#132347" stroke="#38BDF8" stroke-width="1" />
+      <text x="8" y="16" class="mono" font-size="10" fill="#38BDF8">FAISS IndexFlatIP</text>
+      <text x="8" y="28" class="sans stage-sub">Sub-50ms vector search</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 448 162 L 477 162" stroke="#818CF8" stroke-width="2" />
+
+  <!-- Stage 3: Retrieval & Context Aggregation -->
+  <g transform="translate(480, 80)">
+    <rect width="185" height="165" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+    <text x="14" y="24" class="mono tag">03 · RETRIEVAL</text>
+    <text x="14" y="44" class="sans stage-title">Top-K Context Fetch</text>
+
+    <g transform="translate(14, 58)">
+      <rect width="157" height="42" rx="4" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="8" y="18" class="sans" font-size="10" font-weight="600" fill="#E2E8F0">Similarity Thresholding</text>
+      <text x="8" y="32" class="sans stage-sub">Cosine &gt; θ filter</text>
+
+      <rect y="48" width="157" height="36" rx="4" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="8" y="16" class="mono" font-size="10" fill="#818CF8">FastAPI Middleware</text>
+      <text x="8" y="28" class="sans stage-sub">Context prompt synthesis</text>
+    </g>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <path d="M 673 162 L 702 162" stroke="#818CF8" stroke-width="2" />
+
+  <!-- Stage 4: Generative Reasoning -->
+  <g transform="translate(705, 80)">
+    <rect width="175" height="165" rx="8" fill="#0B132B" stroke="#818CF8" stroke-width="1" />
+    <text x="14" y="24" class="mono" font-size="9" font-weight="600" fill="#818CF8">04 · INFERENCE</text>
+    <text x="14" y="44" class="sans stage-title">Groq LLaMA 3.1</text>
+
+    <g transform="translate(14, 58)">
+      <rect width="147" height="42" rx="4" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="8" y="18" class="sans" font-size="10" font-weight="600" fill="#E2E8F0">Ultra-Fast LPUs</text>
+      <text x="8" y="32" class="sans stage-sub">Groq Hardware Acceleration</text>
+
+      <rect y="48" width="147" height="36" rx="4" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="8" y="16" class="mono" font-size="10" fill="#34D399">Hallucination Guard</text>
+      <text x="8" y="28" class="sans stage-sub">Strict factual bounds</text>
+    </g>
+  </g>
+
+  <!-- Arrow 4 -> 5 -->
+  <path d="M 888 162 L 917 162" stroke="#34D399" stroke-width="2" />
+
+  <!-- Stage 5: Grounded Output -->
+  <g transform="translate(920, 80)">
+    <rect width="145" height="165" rx="8" fill="#0B132B" stroke="#34D399" stroke-width="1.2" filter="url(#glowRag)" />
+    <rect width="145" height="165" rx="8" fill="#0B132B" stroke="#34D399" stroke-width="1.2" />
+    <text x="14" y="24" class="mono" font-size="9" font-weight="700" fill="#34D399">05 · OUTPUT</text>
+    <text x="14" y="44" class="sans stage-title">Streamlit UI</text>
+
+    <g transform="translate(14, 58)">
+      <rect width="117" height="84" rx="4" fill="#080C17" stroke="#1E293B" stroke-width="1" />
+      <text x="8" y="20" class="mono" font-size="10" fill="#34D399">✓ Grounded</text>
+      <text x="8" y="36" class="mono" font-size="10" fill="#34D399">✓ Cited Docs</text>
+      <text x="8" y="52" class="sans stage-sub">Audit-grade QA</text>
+      <text x="8" y="68" class="sans stage-sub">Sub-second stream</text>
+    </g>
+  </g>
+</svg>

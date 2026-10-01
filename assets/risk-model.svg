@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgRm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C17" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Heatmap radial contours -->
+    <radialGradient id="hotspot1" cx="45%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.85" />
+      <stop offset="40%" stop-color="#F59E0B" stop-opacity="0.45" />
+      <stop offset="75%" stop-color="#38BDF8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#080C17" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="hotspot2" cx="75%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#080C17" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="glowRm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="gridRm" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1E293B" stroke-width="0.6" stroke-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .subhead { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; fill: #64748B; }
+    .sensor-lbl { font-size: 9px; fill: #38BDF8; font-weight: 600; }
+  </style>
+
+  <rect width="1100" height="340" rx="14" fill="url(#bgRm)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="1100" height="340" rx="14" fill="url(#gridRm)" />
+
+  <!-- Header Section inside SVG -->
+  <g transform="translate(35, 30)">
+    <text x="0" y="0" class="mono subhead">DATA SCIENCE · INTELLIGENT SYSTEMS</text>
+    <text x="0" y="24" class="sans" font-size="20" font-weight="700" fill="#F8FAFC">Adaptive Spatial Risk Modeling System</text>
+    <text x="620" y="24" class="mono" font-size="11" fill="#38BDF8">BAYESIAN INFERENCE · KALMAN FILTERING · EXPECTED IMPROVEMENT</text>
+  </g>
+
+  <!-- Left Side: 2D Spatial Risk Diffusion Map Visual -->
+  <g transform="translate(35, 75)">
+    <rect width="440" height="235" rx="8" fill="#080C17" stroke="#334155" stroke-width="1" />
+    <rect width="440" height="235" rx="8" fill="url(#gridRm)" />
+
+    <!-- Spatial Diffusion Heatmaps -->
+    <ellipse cx="200" cy="115" rx="140" ry="85" fill="url(#hotspot1)" />
+    <ellipse cx="330" cy="70" rx="80" ry="55" fill="url(#hotspot2)" />
+
+    <!-- Contour Isobars -->
+    <ellipse cx="200" cy="115" rx="120" ry="70" fill="none" stroke="#F59E0B" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.6" />
+    <ellipse cx="200" cy="115" rx="70" ry="40" fill="none" stroke="#EF4444" stroke-width="1" opacity="0.8" />
+    <ellipse cx="330" cy="70" rx="55" ry="35" fill="none" stroke="#EC4899" stroke-width="0.8" opacity="0.7" />
+
+    <!-- Sensor Nodes & Dynamic Relocation Trajectories -->
+    <!-- Static Sensor 1 -->
+    <circle cx="80" cy="60" r="5" fill="#38BDF8" stroke="#F8FAFC" stroke-width="1" />
+    <circle cx="80" cy="60" r="14" fill="none" stroke="#38BDF8" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.5" />
+    <text x="92" y="64" class="mono sensor-lbl">S₁ [Fixed]</text>
+
+    <!-- Static Sensor 2 -->
+    <circle cx="110" cy="180" r="5" fill="#38BDF8" stroke="#F8FAFC" stroke-width="1" />
+    <text x="122" y="184" class="mono sensor-lbl">S₂ [Fixed]</text>
+
+    <!-- Dynamic Relocating Sensor (Expected Improvement Vector) -->
+    <circle cx="280" cy="190" r="6" fill="#818CF8" stroke="#F8FAFC" stroke-width="1.5" filter="url(#glowRm)" />
+    <path d="M 280 190 Q 240 160 210 125" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4,3" />
+    <polygon points="208,122 216,131 205,133" fill="#38BDF8" />
+    
+    <text x="292" y="194" class="mono" font-size="10" font-weight="700" fill="#818CF8">S_dyn [EI Reposition]</text>
+    <text x="215" y="110" class="mono" font-size="9" fill="#EF4444" font-weight="700">★ Hotspot Center</text>
+
+    <!-- Legend in visual map -->
+    <rect x="12" y="198" width="180" height="26" rx="4" fill="#0F172A" fill-opacity="0.85" stroke="#1E293B" stroke-width="0.8" />
+    <text x="20" y="215" class="mono" font-size="9" fill="#94A3B8">P(Risk &gt; θ) Spatial Kernel</text>
+  </g>
+
+  <!-- Right Side: Algorithmic Architecture Cards -->
+  <g transform="translate(500, 75)">
+    <!-- Stage 1: Spatial Diffusion & Bayesian Filter -->
+    <g transform="translate(0, 0)">
+      <rect width="565" height="68" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+      <text x="16" y="22" class="mono" font-size="10" fill="#38BDF8" font-weight="600">01 · GAUSSIAN SPATIAL DIFFUSION &amp; TELEMETRY</text>
+      <text x="16" y="42" class="sans" font-size="13" font-weight="700" fill="#F8FAFC">2D Diffusion Kernel + GeoJSON Time-Series Ingestion</text>
+      <text x="16" y="58" class="sans" font-size="11" fill="#94A3B8">Simulates biological vector drift &amp; environmental sensor telemetry streams</text>
+    </g>
+
+    <!-- Stage 2: Kalman Estimation -->
+    <g transform="translate(0, 80)">
+      <rect width="565" height="68" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+      <text x="16" y="22" class="mono" font-size="10" fill="#818CF8" font-weight="600">02 · STATE ESTIMATION &amp; RECURSIVE FILTERING</text>
+      <text x="16" y="42" class="sans" font-size="13" font-weight="700" fill="#F8FAFC">Bayesian Priors + Kalman State Vector Updates</text>
+      <text x="16" y="58" class="sans" font-size="11" fill="#94A3B8">Computes real-time posterior risk distribution under sensor noise and occlusion</text>
+    </g>
+
+    <!-- Stage 3: Expected Improvement & Cost Balancing -->
+    <g transform="translate(0, 160)">
+      <rect width="565" height="75" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1.2" />
+      <text x="16" y="22" class="mono" font-size="10" fill="#38BDF8" font-weight="700">03 · ACTIVE SENSOR PLACEMENT &amp; ROC OPTIMIZATION</text>
+      <text x="16" y="42" class="sans" font-size="13" font-weight="700" fill="#F8FAFC">Expected Improvement (EI) Acquisition + ROC/AUC Tuning</text>
+      <text x="16" y="58" class="sans" font-size="11" fill="#94A3B8">Maximizes information gain; strictly minimizes high-penalty false-negative classifications</text>
+    </g>
+  </g>
+</svg>
