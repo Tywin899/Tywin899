@@ -7,9 +7,9 @@
 
 <!-- REFINED DIRECT CTA LINKS -->
 <p align="center">
-  <a href="https://linkedin.com/in/sohamhadap"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://linkedin.com/in/soham-hadap-3848b532a"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   &nbsp;
-  <a href="mailto:sohamhadap@gmail.com"><img src="https://img.shields.io/badge/Direct_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="mailto:hadapsoham@gmail.com"><img src="https://img.shields.io/badge/Direct_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   &nbsp;
   <a href="https://github.com/Tywin899?tab=repositories"><img src="https://img.shields.io/badge/GitHub_Repos-0F172A?style=for-the-badge&logo=github&logoColor=38BDF8" alt="Repositories" /></a>
 </p>
@@ -31,7 +31,7 @@
 #### **1. TechAtlas — Engineering Knowledge Search Engine**
 > **Java** · **Spring Boot** · **PostgreSQL + pgvector** · **Redis** · **Docker** · **BM25** · **HNSW**
 
-A custom-engineered hybrid technical search engine designed to ingest, index, and query technical RFCs, GitHub repositories, and documentation with sub-millisecond retrieval latency.
+A custom-engineered hybrid technical search engine designed to ingest, index, and query technical RFCs, GitHub repositories, and documentation.
 
 <div align="center">
 <img src="assets/techatlas.svg" width="100%" alt="TechAtlas Search Engine Architecture" />
@@ -40,7 +40,7 @@ A custom-engineered hybrid technical search engine designed to ingest, index, an
 * **Inverted Index Engine:** Persistent and in-memory inverted indices with tokenization, Porter stemming, stop-word elimination, and positional posting lists for precise phrase matching.
 * **AST Query Processor:** Abstract Syntax Tree (AST) evaluator supporting Boolean operators (`AND`, `OR`, `NOT`), field-aware queries, wildcard searches, and synonym expansion.
 * **Hybrid Lexical + Vector Retrieval:** Coupled deterministic BM25 ranking with 384-dimensional ONNX dense embeddings indexed via `pgvector` HNSW graphs.
-* **Production Resiliency:** Background index hydration, automatic crash consistency repair routines, and Redis caching layers for sub-2ms repeated queries.
+* **Production Resiliency:** Background index hydration, automatic crash consistency repair routines, and Redis caching layers for efficient repeated query handling.
 
 ---
 
@@ -63,15 +63,15 @@ An intelligent spatiotemporal risk localization platform developed at **Arsha Co
 #### **3. RAG-Based Financial Report Analyser**
 > **Python** · **FastAPI** · **FAISS** · **LangChain** · **HuggingFace** · **Groq LLaMA 3.1** · **Streamlit**
 
-An automated retrieval-augmented intelligence system built to ingest multi-page financial disclosures and provide audit-grade answers with context-grounded citations.
+An automated retrieval-augmented intelligence system built to ingest multi-page financial disclosures and provide context-grounded answers.
 
 <div align="center">
 <img src="assets/rag-pipeline.svg" width="100%" alt="RAG Financial Report Analyser Pipeline" />
 </div>
 
-* **Deterministic Document Chunking:** Domain-aware semantic chunking strategies preserving tabular structures and footnote context in financial PDFs.
-* **High-Throughput Vector Indexing:** Indexed dense embeddings in FAISS for sub-50ms top-$k$ nearest neighbor retrieval.
-* **Grounded Generative Reasoning:** FastAPI middleware feeding context-constrained prompts into Groq-hosted LLaMA 3.1 with strict hallucination guards.
+* **Recursive Semantic Chunking:** Ingested PDF financial reports with recursive text chunking preserving tabular structures and footnote context.
+* **Dense Vector Indexing:** Generated transformer embeddings via HuggingFace models and indexed them in FAISS for top-$k$ semantic retrieval.
+* **FastAPI & LLM Orchestration:** Built a FastAPI backend pipeline feeding retrieved context into Groq-hosted LLaMA 3.1 for grounded question answering with Streamlit UI.
 
 ---
 
@@ -162,11 +162,11 @@ An automated retrieval-augmented intelligence system built to ingest multi-page 
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-<a href="mailto:sohamhadap@gmail.com">
-  <img src="https://img.shields.io/badge/Email-sohamhadap%40gmail.com-38BDF8?style=for-the-badge&logo=mail.ru&logoColor=0B1020" alt="Email Direct" />
+<a href="mailto:hadapsoham@gmail.com">
+  <img src="https://img.shields.io/badge/Email-hadapsoham%40gmail.com-38BDF8?style=for-the-badge&logo=mail.ru&logoColor=0B1020" alt="Email Direct" />
 </a>
 &nbsp;&nbsp;
-<a href="https://linkedin.com/in/sohamhadap">
+<a href="https://linkedin.com/in/soham-hadap-3848b532a">
   <img src="https://img.shields.io/badge/LinkedIn-Soham_Hadap-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile" />
 </a>
 &nbsp;&nbsp;

@@ -41,7 +41,7 @@
   <g transform="translate(35, 30)">
     <text x="0" y="0" class="mono section-label">SYSTEM ARCHITECTURE · PIPELINE</text>
     <text x="0" y="24" class="sans" font-size="20" font-weight="700" fill="#F8FAFC">TechAtlas: Hybrid Lexical + Dense Retrieval Engine</text>
-    <text x="580" y="24" class="mono" font-size="11" fill="#38BDF8">LATENCY: &lt;1.8ms | DIMS: 384 [ONNX] | STORAGE: pgvector + Inverted Index</text>
+    <text x="630" y="24" class="mono" font-size="11" fill="#38BDF8">DIMS: 384 [ONNX] | HYBRID RANKING: BM25 + pgvector</text>
   </g>
 
   <!-- PIPELINE FLOW -->
@@ -141,7 +141,7 @@
 
       <rect y="88" width="260" height="66" rx="4" fill="#132347" stroke="#38BDF8" stroke-width="1" />
       <text x="10" y="20" class="mono" font-size="11" font-weight="700" fill="#F8FAFC">✓ Top-K High-Precision Hits</text>
-      <text x="10" y="38" class="sans node-sub">Sub-millisecond highlighted snippets</text>
+      <text x="10" y="38" class="sans node-sub">Highlighted match snippets</text>
       <text x="10" y="52" class="sans node-sub">Positional exact phrase match verification</text>
     </g>
   </g>
